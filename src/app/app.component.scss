@@ -1,0 +1,35 @@
+.nav {
+    position: relative;
+    height: 80px;
+}
+
+.bg-nav {
+    background-color: #012D41;
+}
+
+.nav-link {
+    color: #DAECF3;
+    line-height: 60px;
+    &.title {
+        color: #1BA5B8;
+        font-size: 18px;
+    }
+}
+
+.start-template {
+    text-align: center;
+    padding: 35px 0px;
+}
+
+.content {
+    background-color: #2D587B;
+    min-height: 800px;
+    color: #cdcdcd;
+}
+
+footer {
+    height: 210px;
+    padding: 15px 0 20px;
+    background-color: #9CB1BF;
+}
+
