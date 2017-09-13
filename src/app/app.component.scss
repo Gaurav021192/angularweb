@@ -4,32 +4,46 @@
 }
 
 .bg-nav {
-    background-color: #012D41;
+    background-color: #FFFFFF;
 }
 
 .nav-link {
-    color: #DAECF3;
+    color: #012D41;
     line-height: 60px;
     &.title {
-        color: #1BA5B8;
+        color: #012D41;
         font-size: 18px;
     }
 }
 
 .start-template {
-    text-align: center;
     padding: 35px 0px;
+    min-height: 715px;
+    background-image: url(http://www.nationalgeographic.com/content/dam/photography/photos/000/570/57046.adapt.945.1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
 }
 
 .content {
-    background-color: #2D587B;
+    background-color: #FFFFFF;
     min-height: 800px;
-    color: #cdcdcd;
 }
 
 footer {
     height: 210px;
     padding: 15px 0 20px;
-    background-color: #9CB1BF;
+    background-color: #2D587B;
+}
+
+h1 {
+    font-size: 80px;
+    color: #5D85A8;
+    padding: 0px 15px;
+}
+
+h3 {
+    font-size: 70px;
+    color: #3B4A4F;
 }
 
