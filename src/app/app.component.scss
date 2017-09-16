@@ -1,40 +1,60 @@
-.nav {
-    position: relative;
-    height: 80px;
-}
+// .nav {
+//     position: relative;
+//     height: 80px;
+// }
 
-.bg-nav {
-    background-color: #FFFFFF;
-}
+// .bg-nav {
+//     background-color: #FFFFFF;
+// }
 
-.nav-link {
-    color: #012D41;
-    line-height: 60px;
-    &.title {
-        color: #012D41;
-        font-size: 18px;
-    }
-}
+// .nav-link {
+//     color: #012D41;
+//     line-height: 60px;
+//     &.title {
+//         color: #012D41;
+//         font-size: 18px;
+//     }
+// }
 
-.start-template {
-    padding: 35px 0px;
-    min-height: 715px;
-    background-image: url(http://www.nationalgeographic.com/content/dam/photography/photos/000/570/57046.adapt.945.1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-}
+// .start-template {
+//     padding: 35px 0px;
+//     min-height: 715px;
+//     background-image: url(http://www.nationalgeographic.com/content/dam/photography/photos/000/570/57046.adapt.945.1.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     opacity: 0.8;
+// }
 
 .content {
     background-color: #FFFFFF;
-    min-height: 800px;
+    // min-height: 800px;
+}
+
+.header {
+    width: 840px;
 }
 
 footer {
-    height: 210px;
-    padding: 15px 0 20px;
-    background-color: #2D587B;
+    position: fixed;
+    z-index: 100; 
 }
+
+header {
+    padding-top: 0;
+    position: fixed;
+    height: 0;
+    z-index: 100;
+    top: 0;
+    left: 50%;
+    margin-left: -420px;
+    background: #222222;
+}
+
+// footer {
+//     height: 210px;
+//     padding: 15px 0 20px;
+//     background-color: #2D587B;
+// }
 
 h1 {
     font-size: 80px;
@@ -46,4 +66,213 @@ h3 {
     font-size: 70px;
     color: #3B4A4F;
 }
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+section, img, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    display: block;
+}
+
+.backgorund-image {
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.bg-img {
+    width: 1366px;
+    height: 662px;
+    left: 0px;
+    top: -348.5px;
+}
+
+.backgorund-image img {
+    position: absolute;
+}
+
+header nav.head-nav {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    display: block;
+    height: 70px;
+    padding-left: 66px;
+    padding-top: 0;
+    transform: translateY(0);
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+header .head-nav {
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+    display: none;
+}
+
+header .nav.primary {
+    float: left;
+}
+
+header .nav {
+    height: 70px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+header .navli {
+    display: inline-block;
+    line-height: 70px;
+    vertical-align: top;
+    padding: 0 8px;
+}
+
+header .head-nav .navli>a {
+    color: #323641;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header .navli>a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #4cd463;
+    font-weight: 400;
+}
+
+header .nav.account {
+    float: right;
+    margin-right: 10px;
+}
+
+header .head-nav .navli>a:hover {
+    color: #fb724d;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background: #22252e;
+    bottom: 0;
+    left: 0;
+    color: #4c515c;
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+    font-size: .83333em;
+    line-height: 40px;
+}
+
+footer .copyright {
+    float: left;
+    display: block;
+}
+
+footer nav {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    display: block;
+}
+
+footer nav a {
+    color: #4c515c;
+    text-transform: uppercase;
+    padding: 0 5px;
+    margin: 0 5px;
+    // -moz-transition: color .3s ease-out;
+    // -o-transition: color .3s ease-out;
+    // -webkit-transition: color .3s ease-out;
+    // transition: color .3s ease-out;
+}
+
+footer>ul {
+    float: right;
+    display: block;
+}
+
+footer>ul li {
+    width: 40px;
+    height: 100%;
+    border-left: 1px solid #1a1c23;
+    float: left;
+    display: block;
+}
+
+footer>ul li a {
+    width: 100%;
+    height: 100%;
+    text-indent: -4000px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+}
+
+footer nav a:hover {
+    color: #FFFFFF;
+}
+
+footer>ul li:nth-child(1) a {
+    background-image: url(http://education.iceandsky.com/img/twitter.png?1434982628);
+    background-size: 12px 9px;
+}
+
+footer>ul li:nth-child(2) a {
+    background-image: url(http://education.iceandsky.com/img/facebook.png?1434982628);
+    background-size: 5px 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
